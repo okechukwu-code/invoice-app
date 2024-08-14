@@ -53,7 +53,7 @@ export default function CustomerDataForm() {
 
         const customerData = {
             ...formData,
-            id: `${Date.now()}-${Math.random().toString(36).substring(2, 12)}`,
+            id: `${Date.now()}`,
         };
 
         let customerDataBackup = JSON.parse(localStorage.getItem("customerDataBackup")) || [];

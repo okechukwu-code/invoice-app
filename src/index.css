@@ -11,6 +11,11 @@ body {
   color: #333;
 }
 
+.logo-header img {
+  width: 200px;
+  height: 100px;
+}
+
 .phone, .address, .email {
   display: flex;
   align-items: center;
