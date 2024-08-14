@@ -1,0 +1,251 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-header {
+  margin-left: 30px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.phone, .address, .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+.form {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.form:hover {
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroupRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.itemGroup {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.addButton, .removeButton, .submitButton {
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.addButton {
+  background-color: #28a745;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.addButton:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.removeButton {
+  background-color: #dc3545;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.removeButton:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.submitButton {
+  background-color: #007bff;
+  color: #ffffff;
+  width: 100%;
+  display: block;
+}
+
+.submitButton:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+.submitButton:active {
+  background-color: #0056b3;
+  transform: translateY(0);
+}
+
+
+#invoice {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+#invoice h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #da6b3d;
+  margin-bottom: 20px;
+}
+
+#invoice .customerDetails {
+  margin-bottom: 30px;
+}
+
+#invoice .customerDetails p {
+  margin: 5px 0;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+#invoice table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#invoice th, #invoice td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  font-size: 1.1em;
+}
+
+#invoice th {
+  background-color: #e19a7d; 
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#invoice td {
+  background-color: #f9f9f9;
+}
+
+#invoice tfoot tr th, #invoice tfoot tr td {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-top: 2px solid #e19a7d;
+}
+
+#invoice tfoot tr th {
+  text-align: right;
+}
+
+#invoice .totalRow {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+#invoice .totalRow td {
+  font-size: 1.5em;
+  color: #000;
+}
+
+#invoice .itemDescription {
+  font-style: italic;
+}
+
+@media print {
+  #invoice {
+      box-shadow: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .logo-header {
+    margin: 0;
+    padding: 0;
+  }
+
+  #invoice th {
+      background-color: #333333;
+  }
+
+  #invoice .totalRow {
+      background-color: #333333;
+  }
+}
+
+.printButton {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 12px;
+  font-size: 1.2em;
+  color: #ffffff;
+  background-color: #e19a7d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.printButton:hover {
+  background-color: #da6b3d;
+}
+
+@media print {
+  .printButton {
+      display: none;
+  }
+}
